@@ -1,0 +1,7 @@
+flutter_native_splash:
+  color: "#FEFCF1"
+  image: assets/image/sudal.png
+  fullscreen: true
+  android: true
+  ios: true
+
