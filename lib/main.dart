@@ -1,6 +1,6 @@
-import 'package:ecology_collect/screens/ai_report.dart';
-import 'package:ecology_collect/screens/eco_book.dart';
-import 'package:ecology_collect/screens/eco_show.dart';
+import 'package:ecology_collect/screens/AiReport/ai_report.dart';
+import 'package:ecology_collect/screens/Book/eco_book.dart';
+import 'package:ecology_collect/screens/Show/eco_show.dart';
 import 'package:ecology_collect/widgets/menu_bottom.dart';
 import 'package:flutter/material.dart';
 
