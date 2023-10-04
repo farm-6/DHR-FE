@@ -1,7 +1,9 @@
-import 'package:ecology_collect/screens/AiReport/ai_report.dart';
+import 'package:ecology_collect/screens/AiReport/image_select.dart';
 import 'package:ecology_collect/screens/Book/eco_book.dart';
 import 'package:ecology_collect/screens/Show/eco_show.dart';
 import 'package:ecology_collect/widgets/menu_bottom.dart';
+import 'package:ecology_collect/screens/kakao_login.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,17 +17,18 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        '/': (context) => const HomeScreen(),
+        '/': (context) => const Show(),
         '/show': (context) => const Show(),
-        '/camera': (context) => const AiReport(),
+        '/camera': (context) => const ImageSelect(),
         '/book': (context) => const Book(),
+        '/login': (context) => const LoginScreen(),
       },
-      initialRoute: '/',
+      initialRoute: '/login',
       theme: ThemeData(
-        bottomNavigationBarTheme: BottomNavigationBarThemeData(
-          selectedItemColor: Colors.green.shade700,
-        ),
-      ),
+          bottomNavigationBarTheme: BottomNavigationBarThemeData(
+            selectedItemColor: Colors.green.shade700,
+          ),
+          scaffoldBackgroundColor: const Color(0xffFEFCF1)),
     );
   }
 }
