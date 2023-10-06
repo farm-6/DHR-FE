@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:ecology_collect/screens/AiReport/ai_report.dart';
+import 'package:ecology_collect/screens/AiReport/ai_report_fault.dart';
 import 'package:ecology_collect/widgets/top_appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -80,7 +81,8 @@ class _ImageSelectState extends State<ImageSelect> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => AiReport(
+        builder: (context) => AiReportFault(
+          //ai 인식 결과에 따라 화면 결정
           selectedImage: pickedFile,
         ),
       ),
