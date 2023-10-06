@@ -110,7 +110,7 @@ class _AiReportFaultState extends State<AiReportFault> {
                             style: TextStyle(
                               color: Colors.red,
                               fontWeight: FontWeight.bold,
-                              fontSize: 18,
+                              fontSize: 16,
                             ),
                           ),
                           SizedBox(
@@ -123,6 +123,9 @@ class _AiReportFaultState extends State<AiReportFault> {
                               style: TextStyle(
                                 color: Colors.black,
                                 fontSize: 15,
+                                fontFamily:
+                                    AutofillHints.creditCardSecurityCode,
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
                           ),
@@ -137,9 +140,9 @@ class _AiReportFaultState extends State<AiReportFault> {
                 const Text(
                   '아래 카메라 버튼을 누르고',
                   style: TextStyle(
-                      color: Color(0xff87898E),
-                      fontSize: 13,
-                      fontWeight: FontWeight.w600),
+                    color: Color(0xff87898E),
+                    fontSize: 12,
+                  ),
                 ),
                 const SizedBox(
                   height: 3,
@@ -147,9 +150,9 @@ class _AiReportFaultState extends State<AiReportFault> {
                 const Text(
                   '다른 사진으로 도전해봐요!',
                   style: TextStyle(
-                      color: Color(0xff87898E),
-                      fontSize: 17,
-                      fontWeight: FontWeight.bold),
+                    color: Color(0xff87898E),
+                    fontSize: 16,
+                  ),
                 ),
                 const Icon(
                   Icons.keyboard_arrow_down_rounded,

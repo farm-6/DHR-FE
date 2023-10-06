@@ -25,10 +25,12 @@ class MyApp extends StatelessWidget {
       },
       initialRoute: '/login',
       theme: ThemeData(
-          bottomNavigationBarTheme: BottomNavigationBarThemeData(
-            selectedItemColor: Colors.green.shade700,
-          ),
-          scaffoldBackgroundColor: const Color(0xffFEFCF1)),
+        bottomNavigationBarTheme: BottomNavigationBarThemeData(
+          selectedItemColor: Colors.green.shade700,
+        ),
+        scaffoldBackgroundColor: const Color(0xffFEFCF1),
+        fontFamily: 'Jalnan',
+      ),
     );
   }
 }

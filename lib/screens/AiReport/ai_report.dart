@@ -107,7 +107,7 @@ class _AiReportState extends State<AiReport> {
                       width: 20,
                     ),
                     const SizedBox(
-                      width: 185,
+                      width: 200,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -120,13 +120,14 @@ class _AiReportState extends State<AiReport> {
                             ),
                           ),
                           SizedBox(
-                            height: 5,
+                            height: 10,
                           ),
                           Text(
                             '멸종위기 야생생물 I급으로 물가에 살며 야행성이지만 낮에 활동하기도 합니다. 털색은 암갈색이며 턱 아랫부분은 흰색입니다. 입 주변에 더듬이 역할을 하는 수염이 나있어 먹이를 찾는데 도움을 주며, 발가락 사이에 물갈퀴가 있습니다.',
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 14,
+                              fontFamily: AutofillHints.creditCardSecurityCode,
                             ),
                           ),
                         ],
@@ -207,7 +208,14 @@ class _AiReportState extends State<AiReport> {
                     SizedBox(
                       width: 10,
                     ),
-                    Text('도감에 저장하여 수달 탐정의 미션을 완료하세요!'),
+                    Text(
+                      '도감에 저장하여 수달 탐정의 미션을 완료하세요!',
+                      style: TextStyle(
+                        color: Color(0xff87898E),
+                        fontFamily: AutofillHints.creditCardSecurityCode,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ],
                 ),
                 const SizedBox(
