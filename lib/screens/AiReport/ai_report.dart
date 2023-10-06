@@ -64,7 +64,7 @@ class _AiReportState extends State<AiReport> {
                     color: const Color(0xffB8E3AA),
                     borderRadius: BorderRadius.circular(30.0),
                     border: Border.all(
-                      color: Colors.black,
+                      color: const Color(0xff395831),
                       width: 1.0, // 선의 너비
                     ),
                   ),
@@ -92,7 +92,7 @@ class _AiReportState extends State<AiReport> {
                   height: 10,
                 ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(20.0),
@@ -104,7 +104,7 @@ class _AiReportState extends State<AiReport> {
                       ),
                     ),
                     const SizedBox(
-                      width: 5,
+                      width: 20,
                     ),
                     const SizedBox(
                       width: 185,
@@ -146,7 +146,7 @@ class _AiReportState extends State<AiReport> {
                         const Text(
                           '발견 위치 입력',
                           style: TextStyle(
-                            fontSize: 18,
+                            fontSize: 16,
                             fontWeight: FontWeight.w600,
                           ),
                         ),
@@ -174,7 +174,7 @@ class _AiReportState extends State<AiReport> {
                         const Text(
                           '발견 시간 입력',
                           style: TextStyle(
-                            fontSize: 18,
+                            fontSize: 16,
                             fontWeight: FontWeight.w600,
                           ),
                         ),
@@ -224,7 +224,7 @@ class _AiReportState extends State<AiReport> {
                     ),
                     minimumSize: const Size(350, 65),
                     side: const BorderSide(
-                      color: Colors.black, // 선 색상
+                      color: Color(0xff395831), // 선 색상
                       width: 1.0, // 선 너비
                     ),
                   ),
