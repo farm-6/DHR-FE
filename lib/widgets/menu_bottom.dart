@@ -32,8 +32,8 @@ class _MenuBottomState extends State<MenuBottom> {
   Widget build(BuildContext context) {
     return BottomNavigationBar(
       currentIndex: _bottomSelectedIndex,
-      selectedItemColor: const Color(0xff395831), // 아이콘의 활성 상태 색상 설정
-
+      selectedItemColor: const Color(0xff395831),
+      backgroundColor: const Color(0xFFFEFCF1),
       type: BottomNavigationBarType.fixed,
       onTap: (int index) {
         setState(() {
