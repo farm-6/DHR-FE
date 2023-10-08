@@ -67,6 +67,12 @@ flutter:
   assets:
     - assets/image/sudal.png
     - assets/image/cong.jpg
+    - assets/image/bird.png
+    - assets/image/cat.png
+    - assets/image/fish.png
+    - assets/image/frog.png
+    - assets/image/grass.png
+    - assets/image/hopper.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
