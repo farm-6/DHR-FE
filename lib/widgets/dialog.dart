@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class CustomDialog extends StatelessWidget {
   final String title;
-  final String cancelButtonText; // "닫기" 텍스트
-  final String confirmButtonText; // "도감으로 이동" 텍스트
+  final String cancelButtonText;
+  final String confirmButtonText;
   final VoidCallback onConfirm;
   final VoidCallback onCancel;
 
@@ -20,7 +20,7 @@ class CustomDialog extends StatelessWidget {
   Widget build(BuildContext context) {
     return Dialog(
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(10.0), // 모서리를 둥글게 만듭니다.
+        borderRadius: BorderRadius.circular(10.0),
       ),
       child: SizedBox(
         width: 300.0,
@@ -40,7 +40,7 @@ class CustomDialog extends StatelessWidget {
               ),
             ),
             Container(
-              color: const Color(0xffC9C9C9), // 회색 배경 색상
+              color: const Color(0xffC9C9C9),
               height: 2.0, // 회색 가로선 높이
             ),
             Row(
@@ -51,12 +51,13 @@ class CustomDialog extends StatelessWidget {
                   child: Text(
                     cancelButtonText,
                     style: const TextStyle(
-                      color: Color(0xff66A058), // 초록색 텍스트 색상
+                      color: Color(0xff66A058),
+                      fontSize: 16,
                     ),
                   ),
                 ),
                 Container(
-                  color: const Color(0xffC9C9C9), // 회색 배경 색상
+                  color: const Color(0xffC9C9C9),
                   height: 50.0,
                   width: 2,
                 ),
@@ -65,7 +66,8 @@ class CustomDialog extends StatelessWidget {
                   child: Text(
                     confirmButtonText,
                     style: const TextStyle(
-                      color: Color(0xff66A058), // 초록색 텍스트 색상
+                      color: Color(0xff66A058),
+                      fontSize: 16,
                     ),
                   ),
                 ),
