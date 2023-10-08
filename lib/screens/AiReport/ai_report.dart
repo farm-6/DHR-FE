@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:ecology_collect/widgets/dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:ecology_collect/widgets/menu_bottom.dart';
 import 'package:ecology_collect/widgets/menu_drawer.dart';
@@ -18,7 +19,19 @@ class AiReport extends StatefulWidget {
 // 나머지 부분은 동일
 
 class _AiReportState extends State<AiReport> {
-  final _hangangs = ['여의도 한강공원', '반포 한강공원', '이촌 한강공원', '망원 한강공원'];
+  final _hangangs = [
+    '여의도 한강공원',
+    '반포 한강공원',
+    '잠원 한강공원',
+    '잠실 한강공원',
+    '광나루 한강공원',
+    '뚝섬 한강공원',
+    '이촌 한강공원',
+    '망원 한강공원',
+    '난지 한강공원',
+    '강서 한강공원',
+    '양화 한강공원',
+  ];
   String? _selectedHangang;
 
   @override
@@ -28,6 +41,8 @@ class _AiReportState extends State<AiReport> {
       _selectedHangang = _hangangs[0];
     });
   }
+
+  TimeOfDay _selectedTime = TimeOfDay.now();
 
   @override
   Widget build(BuildContext context) {
@@ -136,64 +151,128 @@ class _AiReportState extends State<AiReport> {
                   ],
                 ),
                 const SizedBox(
-                  height: 30,
+                  height: 20,
                 ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text(
-                          '발견 위치 입력',
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600,
-                          ),
+                        const Row(
+                          children: [
+                            SizedBox(
+                              width: 5,
+                            ),
+                            Text(
+                              '* 발견 위치와 시간을 입력해주세요',
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ],
                         ),
-                        DropdownButton(
-                          value: _selectedHangang,
-                          items: _hangangs
-                              .map(
-                                (e) => DropdownMenuItem(
-                                  value: e,
-                                  child: Text(e),
-                                ),
-                              )
-                              .toList(),
-                          onChanged: (value) {
-                            setState(() {
-                              _selectedHangang = value!;
-                            });
-                          },
-                        )
-                      ],
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text(
-                          '발견 시간 입력',
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600,
-                          ),
+                        const SizedBox(
+                          height: 3,
                         ),
-                        DropdownButton(
-                          value: _selectedHangang,
-                          items: _hangangs
-                              .map(
-                                (e) => DropdownMenuItem(
-                                  value: e,
-                                  child: Text(e),
+                        Row(
+                          children: [
+                            SizedBox(
+                              width: 240,
+                              height: 50,
+                              child: DecoratedBox(
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  border: Border.all(
+                                      color: const Color(0xffDFDFE6), width: 2),
+                                  borderRadius: BorderRadius.circular(12),
                                 ),
-                              )
-                              .toList(),
-                          onChanged: (value) {
-                            setState(() {
-                              _selectedHangang = value!;
-                            });
-                          },
+                                child: Padding(
+                                  padding: const EdgeInsets.only(
+                                    left: 30,
+                                    right: 20,
+                                  ),
+                                  child: SizedBox(
+                                    child: DropdownButton(
+                                      style: const TextStyle(
+                                        color: Color(0xff87898E),
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.w600,
+                                        fontFamily: AutofillHints
+                                            .creditCardSecurityCode,
+                                      ),
+                                      isExpanded: true,
+                                      underline: Container(),
+                                      value: _selectedHangang,
+                                      items: _hangangs
+                                          .map(
+                                            (e) => DropdownMenuItem(
+                                              value: e,
+                                              child: Text(e),
+                                            ),
+                                          )
+                                          .toList(),
+                                      onChanged: (value) {
+                                        setState(() {
+                                          _selectedHangang = value!;
+                                        });
+                                      },
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 10,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  width: 130,
+                                  height: 50,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    border: Border.all(
+                                        color: const Color(0xffDFDFE6),
+                                        width: 2),
+                                    borderRadius: BorderRadius.circular(12),
+                                  ),
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        horizontal: 15), // 왼쪽과 오른쪽에 10씩의 패딩 설정
+                                    child: TextButton(
+                                      onPressed: () async {
+                                        final TimeOfDay? selectedTime =
+                                            await showTimePicker(
+                                          context: context,
+                                          initialTime: _selectedTime,
+                                        );
+
+                                        if (selectedTime != null &&
+                                            selectedTime != _selectedTime) {
+                                          setState(() {
+                                            _selectedTime = selectedTime;
+                                          });
+                                        }
+                                      },
+                                      child: Text(
+                                        _selectedTime.format(context),
+                                        style: const TextStyle(
+                                          color: Color(0xff87898E),
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.w600,
+                                          fontFamily: AutofillHints
+                                              .creditCardSecurityCode,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ],
                         )
                       ],
                     ),
@@ -223,7 +302,10 @@ class _AiReportState extends State<AiReport> {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    // 버튼을 누를 때 실행될 동작을 추가하세요.
+                    showCustomDialog(
+                        context, "도감에 저장완료!", "닫기", "도감으로 이동", () {}, () {
+                      Navigator.of(context).pop();
+                    });
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xffB8E3AA),

@@ -81,7 +81,7 @@ class _ImageSelectState extends State<ImageSelect> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => AiReportFault(
+        builder: (context) => AiReport(
           //ai 인식 결과에 따라 화면 결정
           selectedImage: pickedFile,
         ),
