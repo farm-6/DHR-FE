@@ -1,3 +1,4 @@
+import 'package:ecology_collect/screens/Book/select_eco_list.dart';
 import 'package:flutter/material.dart';
 import 'package:ecology_collect/widgets/menu_bottom.dart';
 import 'package:ecology_collect/widgets/menu_drawer.dart';
@@ -16,44 +17,53 @@ class Book extends StatelessWidget {
       bottomNavigationBar: const MenuBottom(),
       body: ListView(
         children: [
-          _buildListItem('assets/image/grass.png', '식물'),
-          _buildListItem('assets/image/frog.png', '양서파충류'),
-          _buildListItem('assets/image/fish.png', '어류'),
-          _buildListItem('assets/image/hopper.png', '육상곤충'),
-          _buildListItem('assets/image/bird.png', '조류'),
-          _buildListItem('assets/image/cat.png', '포유류'),
+          _buildListItem(context, 'assets/image/grass.png', '식물'),
+          _buildListItem(context, 'assets/image/frog.png', '양서파충류'),
+          _buildListItem(context, 'assets/image/fish.png', '어류'),
+          _buildListItem(context, 'assets/image/hopper.png', '육상곤충'),
+          _buildListItem(context, 'assets/image/bird.png', '조류'),
+          _buildListItem(context, 'assets/image/cat.png', '포유류'),
         ],
       ),
     );
   }
 
-  Widget _buildListItem(String imagePath, String text) {
-    return Container(
-      height: 130, // 리스트 아이템의 높이를 120으로 설정
-      decoration: const BoxDecoration(
-        border: Border(
-          bottom: BorderSide(
-            color: Color(0xffD9D9D9), // 구분선 색상
-            width: 1.0, // 구분선 높이
+  Widget _buildListItem(BuildContext context, String imagePath, String text) {
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => SelectEcoList(category: text),
+          ),
+        );
+      },
+      child: Container(
+        height: 130,
+        decoration: const BoxDecoration(
+          border: Border(
+            bottom: BorderSide(
+              color: Color(0xffD9D9D9),
+              width: 1.0,
+            ),
           ),
         ),
-      ),
-      child: Row(
-        mainAxisAlignment:
-            MainAxisAlignment.spaceEvenly, // 이미지와 텍스트를 spaceEvenly 정렬
-        children: [
-          Image.asset(imagePath),
-          const SizedBox(
-            width: 30,
-          ),
-          Text(
-            text,
-            style: const TextStyle(fontSize: 20),
-          ),
-          const SizedBox(
-            width: 30,
-          ),
-        ],
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Image.asset(imagePath),
+            const SizedBox(
+              width: 30,
+            ),
+            Text(
+              text,
+              style: const TextStyle(fontSize: 20),
+            ),
+            const SizedBox(
+              width: 30,
+            ),
+          ],
+        ),
       ),
     );
   }
