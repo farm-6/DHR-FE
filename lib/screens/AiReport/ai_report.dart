@@ -174,7 +174,7 @@ class _AiReportState extends State<AiReport> {
                           ],
                         ),
                         const SizedBox(
-                          height: 3,
+                          height: 5,
                         ),
                         Row(
                           children: [
@@ -190,7 +190,7 @@ class _AiReportState extends State<AiReport> {
                                 ),
                                 child: Padding(
                                   padding: const EdgeInsets.only(
-                                    left: 30,
+                                    left: 20,
                                     right: 20,
                                   ),
                                   child: SizedBox(
