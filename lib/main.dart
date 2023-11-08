@@ -1,12 +1,14 @@
 import 'package:ecology_collect/screens/AiReport/image_select.dart';
 import 'package:ecology_collect/screens/Book/eco_book.dart';
 import 'package:ecology_collect/screens/Show/eco_show.dart';
+import 'package:ecology_collect/screens/kakao_login_screen.dart';
 import 'package:ecology_collect/widgets/menu_bottom.dart';
-import 'package:ecology_collect/screens/kakao_login.dart';
 
 import 'package:flutter/material.dart';
+import 'package:kakao_flutter_sdk/kakao_flutter_sdk_template.dart';
 
 void main() {
+  KakaoSdk.init(nativeAppKey: '71a0cd654e5292995b11c75000049f90');
   runApp(const MyApp());
 }
 
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
         '/show': (context) => const Show(),
         '/camera': (context) => const ImageSelect(),
         '/book': (context) => const Book(),
-        '/login': (context) => const LoginScreen(),
+        '/login': (context) => KakaoLoginScreen(),
       },
       initialRoute: '/login',
       theme: ThemeData(

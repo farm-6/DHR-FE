@@ -1,59 +1,38 @@
-import 'package:ecology_collect/widgets/top_appbar.dart';
-import 'package:flutter/material.dart';
+import 'package:ecology_collect/screens/social_login.dart';
+import 'package:kakao_flutter_sdk/kakao_flutter_sdk_talk.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class KakaoLogin implements SocialLogin {
+  @override
+  Future<bool> login() async {
+    try {
+      bool isInstalled = await isKakaoTalkInstalled();
+      if (isInstalled) {
+        try {
+          await UserApi.instance.loginWithKakaoTalk();
+          return true;
+        } catch (e) {
+          return false;
+        }
+      } else {
+        try {
+          await UserApi.instance.loginWithKakaoAccount();
+          return true;
+        } catch (e) {
+          return false;
+        }
+      }
+    } catch (e) {
+      return false;
+    }
+  }
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: const TopAppBar(
-        title: '로그인',
-      ),
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10.0),
-          child: Column(
-            children: [
-              const SizedBox(
-                height: 80,
-              ),
-              const Text(
-                '수달 탐정의 미션',
-                style: TextStyle(
-                  color: Color(0xff50555C),
-                  fontSize: 24,
-                ),
-              ),
-              const SizedBox(
-                height: 7,
-              ),
-              const Text(
-                '한강의 생태를 찾아 모아보자!',
-                style: TextStyle(
-                  color: Color(0xff50555C),
-                  fontSize: 24,
-                ),
-              ),
-              const SizedBox(
-                height: 30,
-              ),
-              const Text(
-                '한강 생태모아',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 50,
-                ),
-              ),
-              Image.asset(
-                'assets/image/logo.png',
-                width: 360,
-                fit: BoxFit.contain,
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
+  Future<bool> logout() async {
+    try {
+      await UserApi.instance.unlink();
+      return true;
+    } catch (error) {
+      return false;
+    }
   }
 }

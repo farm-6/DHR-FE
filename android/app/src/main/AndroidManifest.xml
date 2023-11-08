@@ -3,16 +3,18 @@
         android:label="ecology_collect"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
-        <activity 
+        <!-- 카카오 로그인 커스텀 URL 스킴 설정 -->
+    <activity 
         android:name="com.kakao.sdk.flutter.AuthCodeCustomTabsActivity"
         android:exported="true">
         <intent-filter android:label="flutter_web_auth">
             <action android:name="android.intent.action.VIEW" />
             <category android:name="android.intent.category.DEFAULT" />
             <category android:name="android.intent.category.BROWSABLE" />
-    
-            <!-- Redirect URI, "kakao${YOUR_NATIVE_APP_KEY}://oauth" 형식 -->
-            <data android:scheme="71a0cd654e5292995b11c75000049f90" android:host="oauth"/>
+
+            <!-- "kakao${YOUR_NATIVE_APP_KEY}://oauth" 형식의 앱 실행 스킴 설정 -->
+            <!-- 카카오 로그인 Redirect URI -->
+            <data android:scheme="kakao71a0cd654e5292995b11c75000049f90" android:host="oauth"/>
         </intent-filter>
     </activity>
         <activity
