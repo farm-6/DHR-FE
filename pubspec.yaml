@@ -38,6 +38,7 @@ dependencies:
   image_picker: ^1.0.4
   kakao_flutter_sdk_user: ^1.6.1
   kakao_flutter_sdk: ^1.6.1
+  http: ^1.1.0
 
 dev_dependencies:
   flutter_test:
@@ -76,6 +77,13 @@ flutter:
     - assets/image/hopper.png
     - assets/image/logo.png
     - assets/image/kakao_login.png
+    - assets/image/grid/plant.png
+    - assets/image/grid/bird.png
+    - assets/image/grid/cat.png
+    - assets/image/grid/dragonfly.png
+    - assets/image/grid/fish.png
+    - assets/image/grid/frog.png
+    - assets/json/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

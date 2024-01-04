@@ -1,0 +1,41 @@
+[
+    {
+        "common_name":"수달",
+        "scientific_name":"Lutra lutra",
+        "synonyms":"",
+        "size":"60~90cm",
+        "habitat":"강, 호수, 연못, 늪, 강가 등 수달은 강둑이나 튀어나온 바위 밑에 굴을 파서 집을 만들거나 다른 동물이 버린 집을 이용하여 서식한다.",
+        "apperance":"멸종위기 야생생물 I급으로 물가에 살며 야행성이지만 낮에 활동하기도 한다. 털색은 암갈색이며 턱 아랫부분은 흰색이다. 입 주변에 더듬이 역할을 하는 수염이 나있어 먹이를 찾는데 도움을 주며, 발가락 사이에 물갈퀴가 있다."
+    },
+    {
+        "common_name":"삵",
+        "scientific_name":"Prionailurus bengalensis",
+        "synonyms":"",
+        "size":"40~60cm",
+        "habitat":"산림, 수풀, 강가 등",
+        "apperance":"멸종위기 야생생물 II급으로 털색은 회갈색이며, 회백색 뺨에는 세 줄의 갈색 줄무늬가 있다. 고양이처럼 생겼으나 훨씬 크다. 야행성이며 먹이는 주로 쥐류와 작은 동물 등을 잡아먹기도 한다."
+    },
+    {
+        "common_name":"고라니",
+        "scientific_name":"Hydropotes inermis",
+        "synonyms":"",
+        "size":"95-135cm",
+        "habitat":"산림, 수풀, 강가 등",
+        "apperance":"수컷의 송곳니가 입 밖으로 나와 번식기에 수컷끼리 싸울 때 이용한다. 눈 밑에 냄새를 분비하는 작은 샘이 있다."
+    },
+    {
+        "common_name":"너구리",
+        "scientific_name":"Haliaeetus albicilla",
+        "synonyms":"",
+        "size":"45-71cm",
+        "habitat":"산림, 수풀, 물가 등",
+        "apperance":"낮에는 굴 속에서 잠을 자고 밤에 주로 활동하는 야행성 개과의 포유류이다. 대체로 흑색에 가깝고 갯과 동물 중 유일하게 동면하는 동물이다."
+    },
+    {
+        "common_name":"청설모",
+        "scientific_name":"Sciurus vulgaris",
+        "synonyms":"",
+        "size":"16-30cm",
+        "habitat":"산림, 수풀, 물가 등"
+    }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "common_name": "흰목물떼새",
+    "scientific_name": "Charadrius placidus",
+    "size": "몸길이 약 20cm",
+    "habitat": "강가등 서식",
+    "apperance": "멸종위기 야생생물 I급으로 물가에 살며 야행성이지만 낮에 활동하기도 한다. 털색은 암갈색이며 턱 아랫부분은 흰색이다. 입 주변에 더듬이 역할을 하는 수염이 나있어 먹이를 찾는데 도움을 주며, 발가락 사이에 물갈퀴가 있다."
+  },
+  {
+    "common_name": "참수리",
+    "scientific_name": "Haliaeetus pelagicus",
+    "size": "몸길이 85~100cm",
+    "habitat": "해안가, 강 하구등 서식",
+    "apperance": "멸종위기 야생생물 I급으로 수릿과에 속하며, 겨울철새이다. 이마가 흰색이며, 주로 고동색을 띤다. 해안, 하천의 하류, 호소 등에서 단독으로 생활하며, 잡식성이다."
+  },
+  {
+    "common_name": "저어새",
+    "scientific_name": "Platalea minor",
+    "size": "몸길이 약 50cm",
+    "habitat": "강 하구, 갯벌등 서식",
+    "apperance": "멸종위기 야생생물 I급으로 주걱 모양의 독특한 검은색 부리를 가지고 있다. 독특한 부리를 물속에 넣고 저으면서 먹이를 찾아 저어새라 불리운다. 몸은 전체적으로 흰색이고 번식기에는 노란색 가슴띠가 생기며, 이마, 눈 가장자리와 턱이 검은색을 띤다."
+  },
+  {
+    "common_name": "큰기러기",
+    "scientific_name": "Anser fabalis",
+    "size": "몸길이 76~89㎝",
+    "habitat": "논, 강하구, 갯벌, 호수",
+    "appearance": "멸종위기 야생생물 II급으로 겨울 철새이다. 소나무류, 전나무류, 자작나무류가 있는 산림지대, 고지의 하천이나 호수 부근에서 번식하는 종이다."
+  },
+  {
+    "common_name": "박새",
+    "scientific_name": "Parus major",
+    "size": "몸길이 13.5~15㎝, 날개 길이 7㎝",
+    "habitat": "높은 산이나 평지의 숲, 공원, 정원, 농촌 부근",
+    "appearance": "크기가 매우 작은 텃새로 서울시 보호종이다. 번식기에는 주로 곤충을 잡아먹는다. 머리 부분이 검은색이며, 목덜미가 까맣고 배에도 검은 줄이 있다."
+  },
+  {
+    "common_name": "개개비",
+    "scientific_name": "Acrocephalus orientalis",
+    "size": "몸길이 17.5~18cm",
+    "habitat": "갈대밭",
+    "appearance": "서울시보호종으로 한반도 전역에서 흔히 볼 수 있는 여름새이다. 몸길이는 18.5cm다. 머리와 등은 회갈색, 배, 멱, 목 아래는 흰색, 눈썹선은 가늘고 황백색, 윗부리는 어두운 갈색, 아랫부리는 연한 노란색이다."
+  },
+  {
+    "common_name": "오색딱다구리",
+    "scientific_name": "Dendrocopos major",
+    "size": "몸길이 약 24㎝, 날개 길이는 13㎝",
+    "habitat": "농경지 주변 나무, 산림",
+    "appearance": "서울시보호종이다. 몸길이 약 24cm에 위꼬리덮깃은 광택이 나는 검은색이고 아래꽁지덮깃은 진홍색을 띤다. 산지 숲속에서 단독 또는 암수 함께 생활할 때가 많다. 나무줄기를 두드려서 구멍을 파고 긴 혀를 이용해서 그 속에 있는 곤충류의 유충을 잡아먹는다."
+  },
+  {
+    "common_name": "직박구리",
+    "scientific_name": "Hypsipetes amaurotis",
+    "size": "몸 길이 약 28cm",
+    "habitat": "산림, 공원, 정원, 아파트 주변 정원수 등",
+    "appearance": "기후변화 생물지표종으로 수컷의 깃털은 옅은 회색이며, 암컷은 수컷보다 다소 작다. 주로 나무 위에서 생활하며, 산란기는 5-6월이다. 식물의 열매와 곤충을 먹는다."
+  },
+  {
+    "common_name": "중대백로",
+    "scientific_name": "Egretta alba modesta",
+    "size": "몸길이 약 87~104cm",
+    "habitat": "하천, 강, 하구, 논, 습지, 갯벌, 해안",
+    "appearance": "기후변화 생물지표종으로 덩치가 큰 여름철새이다. 온 몸이 새하얗고 다리가 검은색이며, 부리는 여름철에는 검은색, 겨울철에는 황색을 띤다."
+  },
+  {
+    "common_name": "황조롱이",
+    "scientific_name": "Falco tinnunculus",
+    "size": "암컷 36~38cm, 수컷 33cm",
+    "habitat": "산림, 해안, 강, 농경지 등",
+    "appearance": "천연기념물로 지정된 맷과에 속한다. 다른 맹금류가 사용한 둥지나 암벽이 움푹 파인 곳에 알을 낳으며, ‘키, 키, 키’하는 울음소리를 낸다."
+  },
+  {
+    "common_name": "원앙",
+    "scientific_name": "Aix galericulata",
+    "size": "몸길이 약 45cm",
+    "habitat": "내륙의 숲과 주변 계곡, 강, 하천",
+    "appearance": "오릿과로 우리나라에서는 텃새이나 일부는 철새이며 천연기념물이다. 수컷은 눈 뒤쪽이 흰색을 이루며, 아래뺨과 목 쪽에는 붉은색을 띤 갈색 장식깃을 가지고 있다. 암컷은 주로 잿빛 갈색을 띤다. 먹이는 풀씨, 나무 열매, 달팽이류, 민물고기 등이다."
+  },
+  {
+    "common_name": "흰뺨검둥오리",
+    "scientific_name": "Anas poecilorhyncha",
+    "size": "몸길이 약 61cm",
+    "habitat": "강, 하구, 저수지, 호수, 해안",
+    "appearance": "텃새이자 겨울새이다. 흰뺨을 가진 것이 특징이며, 눈을 가로지르는 검은 띠가 있다."
+  },
+  {
+    "common_name": "붉은머리오목눈이",
+    "scientific_name": "Paradoxornis webbiana",
+    "size": "몸길이 약 13cm",
+    "habitat": "관목, 갈대밭 또는 풀숲",
+    "appearance": "일명 ‘뱁새’라고 하며 매우 작다. 뻐꾸기 새끼에게 먹이를 가져다 주기도 한다. 텃새로 풀밭, 관목 숲, 덤불, 갈대밭 등에 무리지어 산다."
+  },
+  {
+    "common_name": "괭이갈매기",
+    "scientific_name": "Larus crassirostris",
+    "size": "몸길이 약 47~53cm",
+    "habitat": "해안가, 하구 등",
+    "appearance": "갈매깃과의 텃새로 한강에서 겨울철에 주로 발견된다. 부리 끝이 붉고 검은색 띠가 둘려 있으며, 날 때에는 꽁지 끝에 검은색 띠가 뚜렷하게 보인다. 음식물 쓰레기를 먹어치우는 청소부로 ‘괭이(고양이)’의 특성이 있다."
+  },
+  {
+    "common_name": "비오리",
+    "scientific_name": "Mergus merganser",
+    "size": "몸길이 약 65cm",
+    "habitat": "호수나 하천, 강, 댐 등지, 바다",
+    "appearance": "오릿과의 대형종으로 겨울철새이다. 수컷의 머리 부분은 녹색의 금속광택이 있는 검은색이며 흰 띠가 있고, 암컷은 붉은 밤색이다. 얕은 물에서 먹이를 구하지만 9m까지 잠수하여 물고기를 먹는다."
+  },
+  {
+    "common_name": "흰눈썹황금새",
+    "scientific_name": "Ficedula zanthopygia",
+    "size": "몸길이 약 11cm",
+    "habitat": "삼림·정원 등지",
+    "appearance": "서울시보호종으로 전국적으로 번식하는 흔하지 않는 여름철새이다. 몸길이 13cm이며, 도시의 공원, 정원, 평지와 구릉의 소림이나 활엽수 및 혼효림(여러 종류의 나무로 이루어진 숲)이 있는 지역에 서식한다. 둥지는 주로 전나무 가지 위에 만들거나 나무 구멍, 인공둥지 상자를 이용한다."
+  }
+]

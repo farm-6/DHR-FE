@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         '/show': (context) => const Show(),
         '/camera': (context) => const ImageSelect(),
         '/book': (context) => const Book(),
-        '/login': (context) => KakaoLoginScreen(),
+        '/login': (context) => const KakaoLoginScreen(),
       },
       initialRoute: '/login',
       theme: ThemeData(

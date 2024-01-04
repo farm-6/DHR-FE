@@ -1,0 +1,86 @@
+[
+  {
+    "common_name": "물자라",
+    "scientific_name": "Muljarus japonicus",
+    "size": "몸길이 15-22mm",
+    "habitat": "아시아와 아프리카 일대의 유속이 없는 물속",
+    "appearance": "서울시 보호종으로 갈색 또는 황갈색을 띤다. 등면은 납작하고 타원형이며, 머리는 폭이 넓은 삼각형 모양에 앞으로 돌출되어 있다. 하천이나 저수지의 고요한 물 속에 서식하고 작은 어류나 올챙이 등의 체액을 빨아 먹는다."
+  },
+  {
+    "common_name": "애긴노린재",
+    "scientific_name": "Nysius plebejus Distant",
+    "size": "몸길이 3.5-5.5mm",
+    "habitat": "주로 산 주변의 초지",
+    "appearance": "머리는 뿔처럼 돌출되어 있고, 몸은 황갈색 바탕에 흑갈색 무늬가 있다. 다리는 황갈색에 흑갈색 반점이 있다. 산야의 초원지대나 경작지 주변에 널리 분포한다. 화본과 및 국화과 식물의 꽃이나 종자에 집단 서식한다."
+  },
+  {
+    "common_name": "왕잠자리",
+    "scientific_name": "Anax parthenope julius",
+    "size": "뒷날개 길이 53mm 내외, 배길이 50-55mm, 전체길이 64-75mm",
+    "habitat": "연못, 하천, 저수지 (3~4급 정도의 수질에서도 서식 가능)",
+    "appearance": "서울시 보호종으로 지정되어 있다. 머리는 녹황색, 가슴은 녹색, 날개는 투명하고, 끝이 주로 감색이다. 배에는 선명하고 아름다운 남색 무늬가 인상적이다. 유충은 비교적 넓은 수면이 있는 연못이나 강가의 물이 괸 곳에서 산다."
+  },
+  {
+    "common_name": "꼬마남생이무당벌레",
+    "scientific_name": "Propylea japonica",
+    "size": "몸길이 3-4.5mm",
+    "habitat": "낮은 산지",
+    "appearance": "검은색 등딱지가 있고, 애벌레와 어른벌레 모두 진딧물을 잡아먹는다."
+  },
+  {
+    "common_name": "섬서구메뚜기",
+    "scientific_name": "Atractomorpha lata",
+    "size": "몸길이 20-42mm",
+    "habitat": "논밭이나 풀밭",
+    "appearance": "주로 여름철과 가을철에 발견되며, 방추형이다. 색깔은 옅은 녹색이고, 회녹색 또는 갈색인 개체도 있다. 앞날개는 길고 가늘며 뒷날개는 투명한 연황색이다."
+  },
+  {
+    "common_name": "네발나비",
+    "scientific_name": "Polygonia c-aureum",
+    "size": "날개 편 길이 38-47mm",
+    "habitat": "도시의 개천이나 낮은 산지의 계속 주변, 강가, 등",
+    "appearance": "여름 날개가 황갈색을 띄며 가을에는 붉은 빛을 띈다. 꽃에서 꿀을 즐겨 빨며, 나무의 진이나 동물의 배설물, 습지 등에도 모여서 즙을 빨기도 한다."
+  },
+  {
+    "common_name": "방울실잠자리",
+    "scientific_name": "Platycnemis phyllopoda",
+    "size": "배길이 27-30mm, 뒷날개길이 19-21mm",
+    "habitat": "저지대 습지, 연못 저수지에서 수생식물 근처",
+    "appearance": "이마가 돌출된 오각형 머리와 7마디의 더듬이를 가진 것이 특징이다. 가슴 앞면에 검은색이고 가슴과 어깨 끝에 각각 1개와 2개의 노란색 줄이 있다."
+  },
+  {
+    "common_name": "꽃매미",
+    "scientific_name": "Limois emelianovi",
+    "size": "성충 몸길이 14-15㎜, 날개 편 길이 40∼50㎜",
+    "habitat": "가죽나무 군집, 과수원 주변",
+    "appearance": "중국매미라고도 부르며, 앞날개는 연한 황토색이며 중간 부분에 검은색 반점이 나타난다. 날개 바깥쪽은 검은색이며 안쪽은 빨간색과 흰색을 띤다. 나무의 즙을 빨아먹기 때문에 나뭇가지가 말라 죽으며, 배설물은 그을음병을 유발한다. 포도, 배, 사과, 복숭아나무와 가죽나무 등을 해치는 해충이다."
+  },
+  {
+    "common_name": "호랑나비",
+    "scientific_name": "Papilio xuthus",
+    "size": "날개 폭 봄형 70~75mm, 여름형 90~105mm (중형 나비에 속함)",
+    "habitat": "산지 및 산림 주변지",
+    "appearance": "한반도 전역에 분포하는 종으로서 개체수가 많다. 1년에 총 세 차례로 구분되며, 1세대는 4월-5월, 2세대는 6월-7월, 3세대는 8월-10월에 걸쳐 나타난다. 봄에 나타나는 종인 1세대보다 여름에 나타나는 종의 크기가 더 크다."
+  },
+  {
+    "common_name": "검은실다리베짱이",
+    "scientific_name": "Phaneroptera nigroantennata",
+    "size": "몸길이 23-30mm",
+    "habitat": "풀밭이나 숲 가장자리 덤불",
+    "appearance": "더듬이가 길고 몸은 연한 녹색을 띤다. 날개 전체에 검은 점이 산재해 있으며 뒷다리의 넓적마디 끝에서 발톱까지 검은색을 띤다."
+  },
+  {
+    "common_name": "왕파리매",
+    "scientific_name": "Cophinopoda chinensis",
+    "size": "몸길이 20-28mm",
+    "habitat": "산이나 들",
+    "appearance": "몸빛깔은 황갈색 또는 적갈색이고 몸은 황갈색 가루로 덮였으며, 옆가장자리 앞쪽에 연한 황색의 짧은 털이 성기게 있다. 얼굴은 더듬이 기부 바로 아래에서 융기했고 연한 황색 털과 수염이 있다."
+  },
+  {
+    "common_name": "꼬마꽃등에",
+    "scientific_name": "Sphaerophoria menthastri",
+    "size": "몸길이 8∼9mm",
+    "habitat": "풀밭이나 숲 가장자리 덤불",
+    "appearance": "크기가 작고, 몸은 가늘면서 검은 색을 띠나 수컷은 황적색 부분이 많다. 앞머리와 얼굴은 황색이며, 특히 얼굴에 금속성 광택이 있다. 등 쪽은 구릿빛 나는 흑색이고 옆구리는 오렌지색이다."
+  }
+]
