@@ -17,19 +17,19 @@ class Book extends StatelessWidget {
             itemCount = 14;
             selectedImagePath = 'assets/image/grid/plant.png';
             url =
-                'https://gist.githubusercontent.com/jenny7732/d076e45b610c2c9a10bf06aa74314c65/raw/125b9a921d0cff62edb1df7d5214c758315309e5/plant.json';
+                'https://gist.githubusercontent.com/jenny7732/d076e45b610c2c9a10bf06aa74314c65/raw/18d2a01f2785552c1b29903e34a4725253474bba/plant.json';
             break;
           case '양서파충류':
             itemCount = 9;
             selectedImagePath = 'assets/image/grid/frog.png';
             url =
-                'https://gist.githubusercontent.com/jenny7732/788e8f3fd62b89ae1ab284a9f13b4363/raw/f184cf90888d483dd8e80274059508a30c69877f/frog.json';
+                'https://gist.githubusercontent.com/jenny7732/788e8f3fd62b89ae1ab284a9f13b4363/raw/c61fdd13ebe9cdffa0f5669bf2ce43ee5689ecf7/frog.json';
             break;
           case '어류':
             itemCount = 16;
             selectedImagePath = 'assets/image/grid/fish.png';
             url =
-                'https://gist.githubusercontent.com/jenny7732/732bcf2023f3e905fab15ed2a2debb72/raw/5d9e1bc511886546cf28f61efdb554f40ea5901e/fish.json';
+                'https://gist.githubusercontent.com/jenny7732/732bcf2023f3e905fab15ed2a2debb72/raw/ef7db4b1d832817dfd80d40d2a503afd916a19bb/fish.json';
 
             break;
           case '육상곤충':
@@ -43,14 +43,14 @@ class Book extends StatelessWidget {
             itemCount = 16;
             selectedImagePath = 'assets/image/grid/bird.png';
             url =
-                'https://gist.githubusercontent.com/jenny7732/2d73f6e22919c78daf772e328d417ce9/raw/2c27a2af1c18f98486ce509f3473417ce020b228/bird.json';
+                'https://gist.githubusercontent.com/jenny7732/2d73f6e22919c78daf772e328d417ce9/raw/e7ae3566ae1713347a34e39f5e3da90223a0dc5c/bird.json';
 
             break;
           case '포유류':
             itemCount = 5;
             selectedImagePath = 'assets/image/grid/cat.png';
             url =
-                'https://gist.githubusercontent.com/jenny7732/57c30c9970a5a7d47408bfc84671f988/raw/928f8925bbcb2c10968cfc7349ccbfd457e88ed0/mammals.json';
+                'https://gist.githubusercontent.com/jenny7732/57c30c9970a5a7d47408bfc84671f988/raw/5e19f11be3f835bbcb04285d56a0b68f0a0f8cd5/mammals.json';
 
             break;
           default:
