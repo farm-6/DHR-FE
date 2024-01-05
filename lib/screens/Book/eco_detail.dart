@@ -1,5 +1,5 @@
-import 'package:ecology_collect/screens/Show/enter_memo.dart';
 import 'package:flutter/material.dart';
+import 'package:ecology_collect/screens/Show/enter_memo.dart';
 import 'package:ecology_collect/widgets/top_appbar.dart';
 
 class EcoDetail extends StatelessWidget {
@@ -9,6 +9,13 @@ class EcoDetail extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // 이미지 URL 가져오기
+    String? imageUrl = ecoDetails['image'];
+
+    Widget imageWidget = imageUrl == null
+        ? Image.asset('assets/image/sudal.png')
+        : Image.network(imageUrl);
+
     return Scaffold(
       appBar: TopAppBar(
         title: ecoDetails['common_name'] ?? 'Detail',
@@ -18,7 +25,7 @@ class EcoDetail extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Image.asset('assets/image/sudal.png'),
+            imageWidget,
             const SizedBox(height: 16),
             Text(
               ecoDetails['common_name'],
@@ -27,6 +34,7 @@ class EcoDetail extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 16),
+            // 나머지 정보들 표시
             _buildDetailItem('학명', ecoDetails['scientific_name']),
             _buildDetailItem('크기', ecoDetails['size']),
             _buildDetailItem('서식지', ecoDetails['habitat']),
@@ -98,7 +106,7 @@ class EcoDetail extends StatelessWidget {
             ),
           ),
           Text(
-            content.toString(),
+            content?.toString() ?? '',
             style: const TextStyle(
               fontSize: 13,
               height: 1.3,

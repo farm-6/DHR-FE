@@ -19,8 +19,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        '/': (context) => const Show(),
-        '/show': (context) => const Show(),
+        '/': (context) => Show(),
+        '/show': (context) => Show(),
         '/camera': (context) => const ImageSelect(),
         '/book': (context) => const Book(),
         '/login': (context) => const KakaoLoginScreen(),

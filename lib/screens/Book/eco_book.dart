@@ -17,7 +17,7 @@ class Book extends StatelessWidget {
             itemCount = 14;
             selectedImagePath = 'assets/image/grid/plant.png';
             url =
-                'https://gist.githubusercontent.com/jenny7732/d076e45b610c2c9a10bf06aa74314c65/raw/18d2a01f2785552c1b29903e34a4725253474bba/plant.json';
+                'https://gist.githubusercontent.com/jenny7732/d076e45b610c2c9a10bf06aa74314c65/raw/aa34780470c5a9809862d6bcaa8fbadc844404f8/plant.json';
             break;
           case '양서파충류':
             itemCount = 9;
