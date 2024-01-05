@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+@override
 class TopAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
 

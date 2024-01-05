@@ -1,3 +1,4 @@
+import 'package:ecology_collect/screens/Show/enter_memo.dart';
 import 'package:flutter/material.dart';
 import 'package:ecology_collect/widgets/top_appbar.dart';
 
@@ -30,6 +31,53 @@ class EcoDetail extends StatelessWidget {
             _buildDetailItem('크기', ecoDetails['size']),
             _buildDetailItem('서식지', ecoDetails['habitat']),
             _buildDetailItem('특징', ecoDetails['appearance']),
+            Center(
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => EnterMemo(
+                          commonName: ecoDetails['common_name'] ?? 'No Name'),
+                    ),
+                  );
+                },
+                child: Container(
+                  width: 170,
+                  height: 50,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(30),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 2,
+                        blurRadius: 5,
+                        offset: const Offset(0, 3),
+                      ),
+                    ],
+                  ),
+                  child: const Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        '자랑하기',
+                        style: TextStyle(
+                          color: Colors.grey,
+                          fontSize: 15,
+                        ),
+                      ),
+                      SizedBox(width: 20),
+                      Icon(
+                        Icons.send,
+                        color: Color(0xFF81A875), // #81A875 color
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
           ],
         ),
       ),
