@@ -3,6 +3,8 @@ import 'package:ecology_collect/widgets/menu_bottom.dart';
 import 'package:ecology_collect/widgets/menu_drawer.dart';
 import 'package:ecology_collect/widgets/top_appbar.dart';
 import 'package:flutter/material.dart';
+import 'package:get/instance_manager.dart';
+import 'package:get/route_manager.dart';
 
 class Show extends StatelessWidget {
   final List<String> imagesFromServer = [
@@ -35,12 +37,7 @@ class Show extends StatelessWidget {
         itemBuilder: (BuildContext context, int index) {
           return GestureDetector(
             onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => ShowDetail(),
-                ),
-              );
+              Get.to(const ShowDetail());
             },
             child: Card(
               elevation: 2,

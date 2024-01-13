@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:ecology_collect/widgets/logout.dart';
 import 'package:ecology_collect/widgets/withdrawal.dart';
 import 'package:ecology_collect/widgets/profile_edit.dart';
+import 'package:get/instance_manager.dart';
+import 'package:get/route_manager.dart';
 
 class MenuDrawer extends StatelessWidget {
   const MenuDrawer({super.key});
@@ -49,11 +51,7 @@ List<Widget> buildMenuItems(BuildContext context) {
                 height: 30,
                 child: FilledButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const Profileedit()),
-                    );
+                    Get.to(const Profileedit());
                   },
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all<Color>(
@@ -87,8 +85,7 @@ List<Widget> buildMenuItems(BuildContext context) {
             screen = const Withdrawal();
             break;
         }
-        Navigator.of(context)
-            .push(MaterialPageRoute(builder: (context) => screen));
+        Get.to(screen);
       },
     ));
   }

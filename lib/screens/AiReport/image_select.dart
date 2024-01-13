@@ -4,6 +4,8 @@ import 'package:ecology_collect/screens/AiReport/ai_report.dart';
 import 'package:ecology_collect/screens/AiReport/ai_report_fault.dart';
 import 'package:ecology_collect/widgets/top_appbar.dart';
 import 'package:flutter/material.dart';
+import 'package:get/instance_manager.dart';
+import 'package:get/route_manager.dart';
 import 'package:image_picker/image_picker.dart';
 
 class ImageSelect extends StatefulWidget {
@@ -78,14 +80,9 @@ class _ImageSelectState extends State<ImageSelect> {
   }
 
   void _showAiReport(XFile pickedFile) {
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => AiReport(
-          //ai 인식 결과에 따라 화면 결정
+    Get.to(() => AiReport(
+          // ai 인식 결과에 따라 화면 결정
           selectedImage: pickedFile,
-        ),
-      ),
-    );
+        ));
   }
 }

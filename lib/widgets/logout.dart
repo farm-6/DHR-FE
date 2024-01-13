@@ -2,6 +2,8 @@ import 'package:ecology_collect/screens/kakao_login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:ecology_collect/widgets/top_appbar.dart';
 import 'package:ecology_collect/widgets/menu_bottom.dart';
+import 'package:get/instance_manager.dart';
+import 'package:get/route_manager.dart';
 
 class Logout extends StatelessWidget {
   const Logout({super.key});
@@ -56,12 +58,7 @@ class Logout extends StatelessWidget {
                                         ),
                                         TextButton(
                                           onPressed: () {
-                                            Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                  builder: (context) =>
-                                                      const KakaoLoginScreen()),
-                                            );
+                                            Get.to(const KakaoLoginScreen());
                                           },
                                           child: const Text('확인'),
                                         ),

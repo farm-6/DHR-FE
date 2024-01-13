@@ -2,6 +2,8 @@ import 'package:ecology_collect/widgets/nickname.dart';
 import 'package:flutter/material.dart';
 import 'package:ecology_collect/widgets/top_appbar.dart';
 import 'package:ecology_collect/widgets/menu_bottom.dart';
+import 'package:get/instance_manager.dart';
+import 'package:get/route_manager.dart';
 
 class Profileedit extends StatefulWidget {
   const Profileedit({Key? key}) : super(key: key);
@@ -48,10 +50,7 @@ class _ProfileeditState extends State<Profileedit> {
             ),
             OutlinedButton(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const Nicknameedit()),
-                );
+                Get.to(const Nicknameedit());
               },
               child: const Text(
                 "닉네임                                00  >",
@@ -149,10 +148,7 @@ class _ProfileeditState extends State<Profileedit> {
                 foregroundColor: const Color(0xff66A058),
               ),
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const Profileedit()),
-                );
+                Get.to(const Profileedit());
               },
               child: const Text(
                 '취소',

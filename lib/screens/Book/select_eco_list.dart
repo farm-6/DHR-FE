@@ -1,6 +1,8 @@
 import 'package:ecology_collect/screens/Book/eco_detail.dart';
 import 'package:flutter/material.dart';
 import 'package:ecology_collect/widgets/top_appbar.dart';
+import 'package:get/instance_manager.dart';
+import 'package:get/route_manager.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
@@ -54,13 +56,7 @@ class SelectEcoList extends StatelessWidget {
                 height: 100,
                 child: GestureDetector(
                   onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) =>
-                            EcoDetail(ecoDetails: snapshot.data![index]),
-                      ),
-                    );
+                    Get.to(() => EcoDetail(ecoDetails: snapshot.data![index]));
                   },
                   child: Stack(
                     fit: StackFit.expand,

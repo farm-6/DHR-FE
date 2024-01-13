@@ -5,6 +5,7 @@ import 'package:ecology_collect/screens/kakao_login_screen.dart';
 import 'package:ecology_collect/widgets/menu_bottom.dart';
 
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
 import 'package:kakao_flutter_sdk/kakao_flutter_sdk_template.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       routes: {
         '/': (context) => Show(),
         '/show': (context) => Show(),

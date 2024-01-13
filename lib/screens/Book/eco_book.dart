@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ecology_collect/widgets/top_appbar.dart';
+import 'package:get/instance_manager.dart';
+import 'package:get/route_manager.dart';
 import 'select_eco_list.dart';
 
 class Book extends StatelessWidget {
@@ -59,17 +61,12 @@ class Book extends StatelessWidget {
             url = ''; // 디폴트 URL을 설정하거나 처리할 사항을 추가.
             break;
         }
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => SelectEcoList(
+        Get.to(() => SelectEcoList(
               category: text,
               itemCount: itemCount,
               imagePath: selectedImagePath,
               fileName: url,
-            ),
-          ),
-        );
+            ));
       },
       child: Container(
         height: 130,

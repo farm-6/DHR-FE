@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ecology_collect/screens/Show/enter_memo.dart';
 import 'package:ecology_collect/widgets/top_appbar.dart';
+import 'package:get/instance_manager.dart';
+import 'package:get/route_manager.dart';
 
 class EcoDetail extends StatelessWidget {
   final Map<String, dynamic> ecoDetails;
@@ -42,13 +44,9 @@ class EcoDetail extends StatelessWidget {
             Center(
               child: GestureDetector(
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => EnterMemo(
-                          commonName: ecoDetails['common_name'] ?? 'No Name'),
-                    ),
-                  );
+                  Get.to(() => EnterMemo(
+                        commonName: ecoDetails['common_name'] ?? 'No Name',
+                      ));
                 },
                 child: Container(
                   width: 170,
