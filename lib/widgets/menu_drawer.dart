@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ecology_collect/widgets/logout.dart';
 import 'package:ecology_collect/widgets/withdrawal.dart';
+import 'package:ecology_collect/widgets/profile_edit.dart';
 
 class MenuDrawer extends StatelessWidget {
   const MenuDrawer({super.key});
@@ -20,70 +21,51 @@ List<Widget> buildMenuItems(BuildContext context) {
   List<Widget> menuItems = [];
   menuItems.add(
     DrawerHeader(
-      /*decoration: const BoxDecoration(
-        color: Color(0xffFEFCF1),
-      ),*/
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const SizedBox(
-            height: 35,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Text(
-                    '회원 탈퇴',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
+        decoration: const BoxDecoration(
+          color: Color(0xffB8E3AA),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Image.asset(
+                  'assets/image/sudal.png',
+                  width: 100,
+                  height: 100,
+                ),
+                const Text(
+                  '닉네임',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
                   ),
-                  const SizedBox(
-                    height: 12,
+                ),
+              ],
+            ),
+            SizedBox(
+                width: 300,
+                height: 30,
+                child: FilledButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const Profileedit()),
+                    );
+                  },
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all<Color>(
+                        const Color(0xffFEFCF1)),
                   ),
-                  const Text(
-                    '탈퇴 및 가입',
-                    style: TextStyle(
-                      fontSize: 13,
-                    ),
+                  child: const Text(
+                    '프로필 편집',
+                    style: TextStyle(fontSize: 15, color: Color(0xff395831)),
                   ),
-                  const SizedBox(
-                    height: 5,
-                  ),
-                  Center(
-                      child: FilledButton(
-                    onPressed: () {
-                      showDialog(
-                          context: context,
-                          builder: ((context) => AlertDialog(
-                                title: const Text("정말 탈퇴하시겠습니까?"),
-                                actions: [
-                                  TextButton(
-                                    onPressed: () =>
-                                        Navigator.pop(context, 'Cancel'),
-                                    child: const Text('닫기'),
-                                  ),
-                                  TextButton(
-                                    onPressed: () =>
-                                        Navigator.pop(context, 'OK'),
-                                    child: const Text('확인'),
-                                  ),
-                                ],
-                              )));
-                    },
-                    child: const Text("회원탈퇴"),
-                  ))
-                ],
-              )
-            ],
-          ),
-        ],
-      ),
-    ),
+                ))
+          ],
+        )),
   );
 
   for (var element in menuTitles) {
@@ -91,7 +73,10 @@ List<Widget> buildMenuItems(BuildContext context) {
     menuItems.add(ListTile(
       title: Text(
         element,
-        style: const TextStyle(fontSize: 18, color: Colors.black), // 검정색으로 설정
+        style: const TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 18,
+            color: Color(0xff525252)),
       ),
       onTap: () {
         switch (element) {
@@ -99,7 +84,7 @@ List<Widget> buildMenuItems(BuildContext context) {
             screen = const Logout();
             break;
           case '탈퇴하기':
-            screen = Withdrawal();
+            screen = const Withdrawal();
             break;
         }
         Navigator.of(context)

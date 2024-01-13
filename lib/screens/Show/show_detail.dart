@@ -24,6 +24,7 @@ class ShowDetail extends StatelessWidget {
           Row(
             children: [
               const CircleAvatar(
+                backgroundColor: Colors.transparent,
                 backgroundImage: AssetImage('assets/image/sudal.png'),
                 radius: 20,
               ),

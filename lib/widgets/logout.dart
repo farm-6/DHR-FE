@@ -1,36 +1,90 @@
+import 'package:ecology_collect/screens/kakao_login_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:ecology_collect/widgets/top_appbar.dart';
+import 'package:ecology_collect/widgets/menu_bottom.dart';
 
 class Logout extends StatelessWidget {
-  const Logout({Key? key}) : super(key: key);
+  const Logout({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: ElevatedButton(
-          onPressed: () {
-            _showdialog(context);
-          },
-          child: const Text('push')),
-    );
-  }
-
-  Future<dynamic> _showdialog(BuildContext context) {
-    return showDialog(
-      context: context,
-      builder: (BuildContext context) => AlertDialog(
-        title: const Text('로그아웃하시겠습니까?'),
-        actions: [
-          ElevatedButton(
-              onPressed: () => Navigator.of(context).pop(),
-              child: const Text('닫기')),
-          ElevatedButton(
-              onPressed: () => Navigator.of(context).pop(),
-              child: const Text('확인')),
-        ],
-        elevation: 10.0,
-        backgroundColor: Colors.pink,
-        shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(Radius.circular(32)),
+    return Scaffold(
+      appBar: const TopAppBar(
+        title: '로그아웃',
+      ),
+      bottomNavigationBar: const MenuBottom(),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(
+          horizontal: 30,
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const SizedBox(
+              height: 35,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      '로그아웃 하시겠습니까?',
+                      style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xff585858)),
+                    ),
+                    const SizedBox(
+                      height: 30,
+                    ),
+                    SizedBox(
+                        width: 300,
+                        height: 30,
+                        child: FilledButton(
+                          onPressed: () {
+                            showDialog(
+                                context: context,
+                                builder: ((context) => AlertDialog(
+                                      title: const Text("로그아웃 하기"),
+                                      actions: [
+                                        TextButton(
+                                          onPressed: () =>
+                                              Navigator.pop(context, 'Cancel'),
+                                          child: const Text('닫기'),
+                                        ),
+                                        TextButton(
+                                          onPressed: () {
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const KakaoLoginScreen()),
+                                            );
+                                          },
+                                          child: const Text('확인'),
+                                        ),
+                                      ],
+                                    )));
+                          },
+                          style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                const Color(0xffA5D296)),
+                          ),
+                          child: const Text(
+                            '확인',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 15,
+                                color: Color(0xff395831)),
+                          ),
+                        ))
+                  ],
+                )
+              ],
+            ),
+          ],
         ),
       ),
     );

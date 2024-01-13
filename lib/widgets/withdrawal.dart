@@ -1,7 +1,7 @@
+import 'package:ecology_collect/screens/kakao_login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:ecology_collect/widgets/top_appbar.dart';
 import 'package:ecology_collect/widgets/menu_bottom.dart';
-import 'package:ecology_collect/widgets/menu_drawer.dart';
 
 class Withdrawal extends StatelessWidget {
   const Withdrawal({super.key});
@@ -12,7 +12,6 @@ class Withdrawal extends StatelessWidget {
       appBar: const TopAppBar(
         title: '탈퇴하기',
       ),
-      drawer: const MenuDrawer(),
       bottomNavigationBar: const MenuBottom(),
       body: Padding(
         padding: const EdgeInsets.symmetric(
@@ -33,9 +32,9 @@ class Withdrawal extends StatelessWidget {
                     const Text(
                       '회원 탈퇴',
                       style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                      ),
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xff585858)),
                     ),
                     const SizedBox(
                       height: 12,
@@ -47,43 +46,67 @@ class Withdrawal extends StatelessWidget {
                       ),
                     ),
                     const Text(
-                      '재가입이 제한됩니다. 최초 탈퇴 시에는 가입 시점을 기준으로',
+                      '재가입이 제한됩니다. 최초 탈퇴 시에는 가입 시점을',
                       style: TextStyle(
                         fontSize: 13,
                       ),
                     ),
                     const Text(
-                      '1일간 2회 이상 탈퇴를 반복할 경우 30일간 제한됩니다.',
+                      '기준으로 1일간 2회 이상 탈퇴를 반복할 경우 30일간',
+                      style: TextStyle(
+                        fontSize: 13,
+                      ),
+                    ),
+                    const Text(
+                      '제한됩니다.',
                       style: TextStyle(
                         fontSize: 13,
                       ),
                     ),
                     const SizedBox(
-                      height: 50,
+                      height: 30,
                     ),
-                    Center(
+                    SizedBox(
+                        width: 300,
+                        height: 30,
                         child: FilledButton(
-                      onPressed: () {
-                        showDialog(
-                            context: context,
-                            builder: ((context) => AlertDialog(
-                                  title: const Text("정말 탈퇴하시겠습니까?"),
-                                  actions: [
-                                    TextButton(
-                                      onPressed: () =>
-                                          Navigator.pop(context, 'Cancel'),
-                                      child: const Text('닫기'),
-                                    ),
-                                    TextButton(
-                                      onPressed: () =>
-                                          Navigator.pop(context, 'OK'),
-                                      child: const Text('확인'),
-                                    ),
-                                  ],
-                                )));
-                      },
-                      child: const Text("회원탈퇴"),
-                    ))
+                          onPressed: () {
+                            showDialog(
+                                context: context,
+                                builder: ((context) => AlertDialog(
+                                      title: const Text("정말 탈퇴하시겠습니까?"),
+                                      actions: [
+                                        TextButton(
+                                          onPressed: () =>
+                                              Navigator.pop(context, 'Cancel'),
+                                          child: const Text('닫기'),
+                                        ),
+                                        TextButton(
+                                          onPressed: () {
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const KakaoLoginScreen()),
+                                            );
+                                          },
+                                          child: const Text('확인'),
+                                        ),
+                                      ],
+                                    )));
+                          },
+                          style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                const Color(0xffA5D296)),
+                          ),
+                          child: const Text(
+                            '회원 탈퇴',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 15,
+                                color: Color(0xff395831)),
+                          ),
+                        ))
                   ],
                 )
               ],
