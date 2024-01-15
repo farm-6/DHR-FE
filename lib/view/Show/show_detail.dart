@@ -1,8 +1,12 @@
+import 'package:ecology_collect/view/kakao_login.dart';
+import 'package:ecology_collect/view/login_view_model.dart';
 import 'package:flutter/material.dart';
-import 'package:ecology_collect/widgets/top_appbar.dart';
+import 'package:ecology_collect/view/widgets/top_appbar.dart';
 
+// ignore: must_be_immutable
 class ShowDetail extends StatelessWidget {
-  const ShowDetail({super.key});
+  ShowDetail({super.key});
+  final viewModel = LoginViewModel(KakaoLogin());
 
   @override
   Widget build(BuildContext context) {
@@ -20,21 +24,24 @@ class ShowDetail extends StatelessWidget {
 
           const SizedBox(height: 16),
 
-          // User Info Section
           Row(
             children: [
-              const CircleAvatar(
+              CircleAvatar(
                 backgroundColor: Colors.transparent,
-                backgroundImage: AssetImage('assets/image/sudal.png'),
+                backgroundImage: NetworkImage(
+                    viewModel.user?.kakaoAccount?.profile?.profileImageUrl ??
+                        ''),
                 radius: 20,
               ),
               const SizedBox(width: 8),
-              const Column(
+              Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'User Name',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                    viewModel.user?.kakaoAccount?.profile?.nickname ??
+                        'nickname',
+                    style: const TextStyle(
+                        fontWeight: FontWeight.bold, fontSize: 10),
                   ),
                 ],
               ),

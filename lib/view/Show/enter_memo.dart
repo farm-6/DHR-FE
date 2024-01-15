@@ -1,5 +1,7 @@
+import 'package:ecology_collect/view/Show/eco_show.dart';
 import 'package:flutter/material.dart';
-import 'package:ecology_collect/widgets/top_appbar.dart';
+import 'package:ecology_collect/view/widgets/top_appbar.dart';
+import 'package:get/route_manager.dart';
 
 class EnterMemo extends StatelessWidget {
   final String commonName;
@@ -34,7 +36,7 @@ class EnterMemo extends StatelessWidget {
               const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
-                  // Implement action when sharing the content
+                  Get.off(Show());
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xFF76B760), // #B8E3AA color

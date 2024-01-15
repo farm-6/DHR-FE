@@ -1,4 +1,4 @@
-import 'package:ecology_collect/screens/social_login.dart';
+import 'package:ecology_collect/view/social_login.dart';
 import 'package:kakao_flutter_sdk/kakao_flutter_sdk_talk.dart';
 
 class LoginViewModel {

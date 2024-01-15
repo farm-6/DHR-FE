@@ -84,7 +84,6 @@ flutter:
     - assets/image/grid/dragonfly.png
     - assets/image/grid/fish.png
     - assets/image/grid/frog.png
-    - assets/json/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

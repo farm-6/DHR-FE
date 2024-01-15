@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ecology_collect/screens/Show/enter_memo.dart';
-import 'package:ecology_collect/widgets/top_appbar.dart';
-import 'package:get/instance_manager.dart';
+import 'package:ecology_collect/view/Show/enter_memo.dart';
+import 'package:ecology_collect/view/widgets/top_appbar.dart';
+
 import 'package:get/route_manager.dart';
 
 class EcoDetail extends StatelessWidget {

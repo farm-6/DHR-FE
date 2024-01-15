@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ecology_collect/widgets/logout.dart';
-import 'package:ecology_collect/widgets/withdrawal.dart';
-import 'package:ecology_collect/widgets/profile_edit.dart';
+import 'package:ecology_collect/view/widgets/logout.dart';
+import 'package:ecology_collect/view/widgets/withdrawal.dart';
+import 'package:ecology_collect/view/widgets/profile_edit.dart';
 import 'package:get/instance_manager.dart';
 import 'package:get/route_manager.dart';
 
@@ -51,7 +51,7 @@ List<Widget> buildMenuItems(BuildContext context) {
                 height: 30,
                 child: FilledButton(
                   onPressed: () {
-                    Get.to(const Profileedit());
+                    Get.to(() => const Profileedit());
                   },
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all<Color>(
@@ -85,7 +85,7 @@ List<Widget> buildMenuItems(BuildContext context) {
             screen = const Withdrawal();
             break;
         }
-        Get.to(screen);
+        Get.to(() => screen);
       },
     ));
   }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ecology_collect/widgets/top_appbar.dart';
-import 'package:ecology_collect/widgets/menu_bottom.dart';
-import 'package:ecology_collect/widgets/profile_edit.dart';
+import 'package:ecology_collect/view/widgets/top_appbar.dart';
+import 'package:ecology_collect/view/widgets/menu_bottom.dart';
+import 'package:ecology_collect/view/widgets/profile_edit.dart';
 import 'package:get/instance_manager.dart';
 import 'package:get/route_manager.dart';
 
@@ -57,7 +57,7 @@ class Nicknameedit extends StatelessWidget {
                 height: 30,
                 child: FilledButton(
                     onPressed: () {
-                      Get.to(const Profileedit());
+                      Get.to(() => const Profileedit());
                     },
                     style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all<Color>(

@@ -1,23 +1,25 @@
-import 'package:ecology_collect/screens/Book/eco_detail.dart';
 import 'package:flutter/material.dart';
-import 'package:ecology_collect/widgets/top_appbar.dart';
-import 'package:get/instance_manager.dart';
+import 'package:ecology_collect/view/Book/eco_detail.dart';
+import 'package:ecology_collect/view/widgets/top_appbar.dart';
+
 import 'package:get/route_manager.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 class SelectEcoList extends StatelessWidget {
-  final String category;
+  final String name;
   final int itemCount;
   final String imagePath;
   final String fileName;
+  final int category;
 
   const SelectEcoList({
     Key? key,
-    required this.category,
+    required this.name,
     required this.itemCount,
     required this.imagePath,
     required this.fileName,
+    required this.category,
   }) : super(key: key);
 
   Future<List<Map<String, dynamic>>> _loadJsonData(String url) async {
@@ -34,7 +36,7 @@ class SelectEcoList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: TopAppBar(
-        title: category, // Set category as title
+        title: name, // Set category as title
       ),
       body: FutureBuilder<List<Map<String, dynamic>>>(
         future: _loadJsonData(fileName),
@@ -44,19 +46,23 @@ class SelectEcoList extends StatelessWidget {
           } else if (snapshot.hasError || !snapshot.hasData) {
             return const Center(child: Text('Failed to load data'));
           } else {
+            List<Map<String, dynamic>> filteredData = snapshot.data!
+                .where((item) => item['category'] == category)
+                .toList();
+
             return GridView.builder(
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 3,
                 mainAxisSpacing: 3,
                 crossAxisSpacing: 3,
               ),
-              itemCount: itemCount,
+              itemCount: filteredData.length,
               itemBuilder: (context, index) => SizedBox(
                 width: 100,
                 height: 100,
                 child: GestureDetector(
                   onTap: () {
-                    Get.to(() => EcoDetail(ecoDetails: snapshot.data![index]));
+                    Get.to(() => EcoDetail(ecoDetails: filteredData[index]));
                   },
                   child: Stack(
                     fit: StackFit.expand,
@@ -68,7 +74,7 @@ class SelectEcoList extends StatelessWidget {
                           padding: const EdgeInsets.all(4),
                           child: Center(
                             child: Text(
-                              snapshot.data![index]['common_name'] ?? 'No data',
+                              filteredData[index]['common_name'] ?? 'No data',
                               style: const TextStyle(
                                 fontSize: 18,
                                 color: Colors.white,

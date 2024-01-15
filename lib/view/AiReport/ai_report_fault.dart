@@ -1,9 +1,9 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:ecology_collect/widgets/menu_bottom.dart';
-import 'package:ecology_collect/widgets/menu_drawer.dart';
-import 'package:ecology_collect/widgets/top_appbar.dart';
+import 'package:ecology_collect/view/widgets/menu_bottom.dart';
+import 'package:ecology_collect/view/widgets/menu_drawer.dart';
+import 'package:ecology_collect/view/widgets/top_appbar.dart';
 import 'package:image_picker/image_picker.dart';
 
 class AiReportFault extends StatefulWidget {

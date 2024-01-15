@@ -1,10 +1,9 @@
 import 'dart:io';
 
-import 'package:ecology_collect/screens/AiReport/ai_report.dart';
-import 'package:ecology_collect/screens/AiReport/ai_report_fault.dart';
-import 'package:ecology_collect/widgets/top_appbar.dart';
+import 'package:ecology_collect/view/AiReport/ai_report.dart';
+import 'package:ecology_collect/view/AiReport/ai_report_fault.dart';
+import 'package:ecology_collect/view/widgets/top_appbar.dart';
 import 'package:flutter/material.dart';
-import 'package:get/instance_manager.dart';
 import 'package:get/route_manager.dart';
 import 'package:image_picker/image_picker.dart';
 

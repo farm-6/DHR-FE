@@ -1,8 +1,8 @@
-import 'package:ecology_collect/screens/AiReport/image_select.dart';
-import 'package:ecology_collect/screens/Book/eco_book.dart';
-import 'package:ecology_collect/screens/Show/eco_show.dart';
-import 'package:ecology_collect/screens/kakao_login_screen.dart';
-import 'package:ecology_collect/widgets/menu_bottom.dart';
+import 'package:ecology_collect/view/AiReport/image_select.dart';
+import 'package:ecology_collect/view/Book/eco_book.dart';
+import 'package:ecology_collect/view/Show/eco_show.dart';
+import 'package:ecology_collect/view/kakao_login_screen.dart';
+import 'package:ecology_collect/view/widgets/menu_bottom.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
