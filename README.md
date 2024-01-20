@@ -40,8 +40,7 @@
 
 | AI 분석 실패할 경우 | 시간 및 날짜 선택 | 도감에 저장하기 |
 | -------- | -------- | -------- |
-|<img width="250" alt="image" src="https://github.com/farm-6/HEC-FE/assets/119389695/5c248efb-d9ec-4da1-bd92-07dd44468c49">
-| <img width="150" alt="스크린샷 2024-01-20 오후 4 02 12" src="https://github.com/farm-6/HEC-FE/assets/119389695/d51ecac0-e006-48ed-95dd-19a582e1ff65"> <img width="150" alt="스크린샷 2024-01-20 오후 4 02 21" src="https://github.com/farm-6/HEC-FE/assets/119389695/672ab59c-db67-4e0b-b2f5-23d1b4d4fbc0"> |<img width="250" alt="스크린샷 2024-01-20 오후 4 02 35" src="https://github.com/farm-6/HEC-FE/assets/119389695/96621a71-d357-4b79-a757-e9af23ca5f25">|
+|<img width="250" alt="image" src="https://github.com/farm-6/HEC-FE/assets/119389695/5c248efb-d9ec-4da1-bd92-07dd44468c49">| <img width="150" alt="스크린샷 2024-01-20 오후 4 02 12" src="https://github.com/farm-6/HEC-FE/assets/119389695/d51ecac0-e006-48ed-95dd-19a582e1ff65"> <img width="150" alt="스크린샷 2024-01-20 오후 4 02 21" src="https://github.com/farm-6/HEC-FE/assets/119389695/672ab59c-db67-4e0b-b2f5-23d1b4d4fbc0"> |<img width="250" alt="스크린샷 2024-01-20 오후 4 02 35" src="https://github.com/farm-6/HEC-FE/assets/119389695/96621a71-d357-4b79-a757-e9af23ca5f25">|
 
 ### ✅ 도감 화면
 
