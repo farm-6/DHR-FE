@@ -24,6 +24,12 @@
 3. 도감
 4. 마이페이지
 
+## 📌 사용한 Dart Package
+
+1. image_picker : image_picker를 사용하여 AI 분석 화면 중 갤러리에서 사진을 가져왔습니다.
+2. http : http를 사용하여 json 형태의 도감 데이터를 가져왔습니다.
+3. get : get을 사용하여 페이지 이동을 구현하였습니다.
+
 ## 📌 UI
 
 ### ✅ 로그인 화면
