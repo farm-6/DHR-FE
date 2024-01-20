@@ -1,10 +1,20 @@
 # HEC-FE 🦆
 [Han River Ecology Collect] Front-End
 
-### 🦆한강에오리 AI Front-End
+### 🦆 한강 생태모아 Front-End
 
 > 서울의 공원 (https://parks.seoul.go.kr/) 에서 제공하는 한강생태지도의 한강 생태를 기준으로 도감을 구성하였습니다. </br>
-![표지](https://github.com/farm-6/HEC-FE/assets/119389695/47fbe377-dc31-486a-8dfc-c4c70b71ecdf)
+
+<img width="700" alt="표지" src="https://github.com/farm-6/HEC-FE/assets/119389695/47fbe377-dc31-486a-8dfc-c4c70b71ecdf">
+
+## 🦆 프로젝트 개요
+
+> “한강 생태모아”는 어린이들을 대상으로 한 환경 교육과 동시에 생태 도감 기능을 제공하는 애플리케이션입니다. 
+
+- ‘AI 기반 객체 인식 기능’은 사진을 찍은 후 AI기반 Classification기능을 활용하여 한강 지역의 곤충, 포유류, 식물 등의 생물을 식별하고 정보를 제공합니다. 
+- ‘도감 기능’은 사용자가 찍은 사진들을 저장하고, 생물의 도감을 자동으로 생성합니다. 도감에는 찍은 날짜, 위치, 생물의 이름 및 정보 등이 포함됩니다.
+ - ‘자랑하기 기능’은 사용자들은 도감에 저장된 사진을 손쉽게 앱 내의 SNS에 공유하고, 다른 사용자들과 경쟁하며 도감을 채워나갈 수 있도록 합니다. 이러한 한강 생태 도감 앱을 통해 어린이들에게 다양한 생물이 공존하는 한강 생태교육을 하고, 한강의 생태를 사랑하는 사람들에게 즐거움을 주고자 하였습니다. 
+
 
 
 ## 📌 기능 구성
@@ -30,7 +40,8 @@
 
 | AI 분석 실패할 경우 | 시간 및 날짜 선택 | 도감에 저장하기 |
 | -------- | -------- | -------- |
-|| <img width="150" alt="스크린샷 2024-01-20 오후 4 02 12" src="https://github.com/farm-6/HEC-FE/assets/119389695/d51ecac0-e006-48ed-95dd-19a582e1ff65"> <img width="150" alt="스크린샷 2024-01-20 오후 4 02 21" src="https://github.com/farm-6/HEC-FE/assets/119389695/672ab59c-db67-4e0b-b2f5-23d1b4d4fbc0"> |<img width="250" alt="스크린샷 2024-01-20 오후 4 02 35" src="https://github.com/farm-6/HEC-FE/assets/119389695/96621a71-d357-4b79-a757-e9af23ca5f25">|
+|<img width="250" alt="image" src="https://github.com/farm-6/HEC-FE/assets/119389695/5c248efb-d9ec-4da1-bd92-07dd44468c49">
+| <img width="150" alt="스크린샷 2024-01-20 오후 4 02 12" src="https://github.com/farm-6/HEC-FE/assets/119389695/d51ecac0-e006-48ed-95dd-19a582e1ff65"> <img width="150" alt="스크린샷 2024-01-20 오후 4 02 21" src="https://github.com/farm-6/HEC-FE/assets/119389695/672ab59c-db67-4e0b-b2f5-23d1b4d4fbc0"> |<img width="250" alt="스크린샷 2024-01-20 오후 4 02 35" src="https://github.com/farm-6/HEC-FE/assets/119389695/96621a71-d357-4b79-a757-e9af23ca5f25">|
 
 ### ✅ 도감 화면
 
