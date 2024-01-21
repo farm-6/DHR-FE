@@ -79,7 +79,7 @@ class _ImageSelectState extends State<ImageSelect> {
   }
 
   void _showAiReport(XFile pickedFile) {
-    Get.to(() => AiReport(
+    Get.to(() => AiReportFault(
           // ai 인식 결과에 따라 화면 결정
           selectedImage: pickedFile,
         ));

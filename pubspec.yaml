@@ -70,6 +70,7 @@ flutter:
   assets:
     - assets/image/sudal.png
     - assets/image/cong.jpg
+    - assets/image/flower.png
     - assets/image/bird.png
     - assets/image/cat.png
     - assets/image/fish.png

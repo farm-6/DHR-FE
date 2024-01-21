@@ -7,9 +7,8 @@ class Book extends StatelessWidget {
   const Book({Key? key}) : super(key: key);
 
   Widget _buildListItem(BuildContext context, String imagePath, String text) {
-    // Unified JSON file URL
     String commonUrl =
-        'https://gist.githubusercontent.com/jenny7732/23d4f9bbd0168830194525c8b2fdb695/raw/0e264431682789b58c4e077415fb7e34fd156665/all.json';
+        'https://gist.githubusercontent.com/jenny7732/23d4f9bbd0168830194525c8b2fdb695/raw/d2024767901d3cd57e1c46d24aa386e5ce0f20bf/all.json';
 
     return GestureDetector(
       onTap: () {

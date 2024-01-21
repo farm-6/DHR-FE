@@ -3,18 +3,16 @@ import 'package:ecology_collect/view/widgets/menu_bottom.dart';
 import 'package:ecology_collect/view/widgets/menu_drawer.dart';
 import 'package:ecology_collect/view/widgets/top_appbar.dart';
 import 'package:flutter/material.dart';
-import 'package:get/instance_manager.dart';
 import 'package:get/route_manager.dart';
 
 class Show extends StatelessWidget {
   final List<String> imagesFromServer = [
-    'https://cdn.epnnews.com/news/photo/202008/5216_6301_1640.jpg',
-    'https://cdn.epnnews.com/news/photo/202008/5216_6301_1640.jpg',
-    'https://cdn.epnnews.com/news/photo/202008/5216_6301_1640.jpg',
-    'https://cdn.epnnews.com/news/photo/202008/5216_6301_1640.jpg',
-    'https://cdn.epnnews.com/news/photo/202008/5216_6301_1640.jpg',
-    'https://cdn.epnnews.com/news/photo/202008/5216_6301_1640.jpg',
-    'https://cdn.epnnews.com/news/photo/202008/5216_6301_1640.jpg',
+    'assets/image/flower.png',
+    'assets/image/flower.png',
+    'assets/image/flower.png',
+    'assets/image/flower.png',
+    'assets/image/flower.png',
+    'assets/image/flower.png',
   ];
 
   Show({super.key});
@@ -41,7 +39,7 @@ class Show extends StatelessWidget {
             },
             child: Card(
               elevation: 2,
-              child: Image.network(
+              child: Image.asset(
                 imagesFromServer[index],
                 fit: BoxFit.cover,
               ),

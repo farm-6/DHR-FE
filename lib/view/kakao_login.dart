@@ -9,6 +9,8 @@ import 'package:kakao_flutter_sdk/kakao_flutter_sdk_talk.dart';
 
 class KakaoLogin implements SocialLogin {
   OAuthToken? token;
+  String? userid;
+  String? username;
   String? nickname;
   String? profileImageUrl;
 
@@ -20,7 +22,7 @@ class KakaoLogin implements SocialLogin {
         try {
           token = await UserApi.instance.loginWithKakaoTalk();
           debugPrint('카카오톡 로그인 성공!!');
-          debugPrint('$token');
+
           final url = Uri.https('kapi.kakao.com', '/v2/user/me');
 
           final response = await http.get(
@@ -29,20 +31,21 @@ class KakaoLogin implements SocialLogin {
               HttpHeaders.authorizationHeader: 'Bearer ${token?.accessToken}'
             },
           );
-          debugPrint('response.body !!!!!');
-          debugPrint(response.body);
+
           final profileInfo = json.decode(response.body);
           profileImageUrl = profileInfo?['properties']['profile_image'];
+          userid = profileInfo?['id'].toString();
+          username = profileInfo?['properties']['nickname'];
           nickname = profileInfo?['properties']['nickname'];
-          debugPrint(profileImageUrl);
           debugPrint(nickname);
 
           if (token != null) {
             jwtToken = token!.accessToken;
           }
-          debugPrint(jwtToken);
+
           return true;
         } catch (e) {
+          debugPrint('응답 본문 디코딩 오류: $e');
           debugPrint('카카오톡 로그인 실패!!');
           return false;
         }
@@ -50,7 +53,7 @@ class KakaoLogin implements SocialLogin {
         try {
           token = await UserApi.instance.loginWithKakaoAccount();
           debugPrint('카카오톡 로그인 성공!!');
-          debugPrint('$token');
+
           final url = Uri.https('kapi.kakao.com', '/v2/user/me');
 
           final response = await http.get(
@@ -59,20 +62,20 @@ class KakaoLogin implements SocialLogin {
               HttpHeaders.authorizationHeader: 'Bearer ${token?.accessToken}'
             },
           );
-          debugPrint('response.body !!!!!');
-          debugPrint(response.body);
+
           final profileInfo = json.decode(response.body);
           profileImageUrl = profileInfo?['properties']['profile_image'];
+          userid = profileInfo?['id'].toString();
+          username = profileInfo?['properties']['nickname'];
           nickname = profileInfo?['properties']['nickname'];
-          debugPrint(profileImageUrl);
           debugPrint(nickname);
-
           if (token != null) {
             jwtToken = token!.accessToken;
           }
           debugPrint(jwtToken);
           return true;
         } catch (e) {
+          debugPrint('응답 본문 디코딩 오류: $e');
           debugPrint('카카오톡 로그인 실패!!');
           return false;
         }

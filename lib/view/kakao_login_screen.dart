@@ -1,3 +1,4 @@
+import 'package:ecology_collect/view/AiReport/image_select.dart';
 import 'package:ecology_collect/view/Show/eco_show.dart';
 import 'package:ecology_collect/view/kakao_login.dart';
 import 'package:ecology_collect/view/login_view_model.dart';

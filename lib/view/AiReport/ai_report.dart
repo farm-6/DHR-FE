@@ -111,11 +111,11 @@ class _AiReportState extends State<AiReport> {
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(20.0),
-                      child: Image.asset(
-                        'assets/image/cong.jpg', // 이미지 파일 경로
-                        width: 180, // 이미지 가로 크기
-                        height: 180, // 이미지 세로 크기
-                        fit: BoxFit.cover, // 이미지가 박스를 채우도록 설정
+                      child: Image.network(
+                        'https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FLz4v4%2Fbtq7XthY041%2FsvdwCxxLKYJ3AW3ktOAkxk%2Fimg.jpg',
+                        width: 180,
+                        height: 180,
+                        fit: BoxFit.cover,
                       ),
                     ),
                     const SizedBox(
@@ -127,7 +127,7 @@ class _AiReportState extends State<AiReport> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            '수달', // 제목 텍스트
+                            '송엽국', // 제목 텍스트
                             style: TextStyle(
                               color: Colors.black,
                               fontWeight: FontWeight.bold,
@@ -138,7 +138,7 @@ class _AiReportState extends State<AiReport> {
                             height: 8,
                           ),
                           Text(
-                            '멸종위기 야생생물 I급으로 물가에 살며 야행성이지만 낮에 활동하기도 합니다. 털색은 암갈색이며 턱 아랫부분은 흰색입니다. 입 주변에 더듬이 역할을 하는 수염이 나있어 먹이를 찾는데 도움을 주며, 발가락 사이에 물갈퀴가 있습니다.',
+                            '송엽국은 잎은 소나무를 닮았고 꽃은 국화를 닮았다고 하여 송엽국입니다. 즉 소나무잎 국화라는 이름이 붙었는데 이것 외에도 솔잎국화, 송엽, 사계국화, 사철채송화, 등 다양한 이름이 있습니다',
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 13,

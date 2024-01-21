@@ -18,7 +18,7 @@ class ShowDetail extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         children: [
           Image.asset(
-            'assets/image/sudal.png',
+            'assets/image/flower.png',
             fit: BoxFit.cover,
           ),
 
@@ -28,20 +28,19 @@ class ShowDetail extends StatelessWidget {
             children: [
               CircleAvatar(
                 backgroundColor: Colors.transparent,
-                backgroundImage: NetworkImage(
-                    viewModel.user?.kakaoAccount?.profile?.profileImageUrl ??
-                        ''),
+                backgroundImage: NetworkImage(viewModel
+                        .user?.kakaoAccount?.profile?.profileImageUrl ??
+                    'http://k.kakaocdn.net/dn/1G9kp/btsAot8liOn/8CWudi3uy07rvFNUkk3ER0/img_640x640.jpg'),
                 radius: 20,
               ),
-              const SizedBox(width: 8),
+              const SizedBox(width: 10),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    viewModel.user?.kakaoAccount?.profile?.nickname ??
-                        'nickname',
+                    viewModel.user?.kakaoAccount?.profile?.nickname ?? '이유진',
                     style: const TextStyle(
-                        fontWeight: FontWeight.bold, fontSize: 10),
+                        fontWeight: FontWeight.bold, fontSize: 20),
                   ),
                 ],
               ),
@@ -69,18 +68,18 @@ class ShowDetail extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                '명칭 : Name of the Ecology',
-                style: TextStyle(fontSize: 15),
+                '명칭 : 송엽국',
+                style: TextStyle(fontSize: 16),
               ),
               SizedBox(height: 5),
               Text(
-                '발견 위치 : Discovery Location',
-                style: TextStyle(fontSize: 15),
+                '발견 위치 : 여의도 한강공원',
+                style: TextStyle(fontSize: 16),
               ),
               SizedBox(height: 5),
               Text(
-                '발견 시간 : Discovery Time',
-                style: TextStyle(fontSize: 15),
+                '발견 시간 : 3:03 PM',
+                style: TextStyle(fontSize: 16),
               ),
             ],
           ),
@@ -93,10 +92,9 @@ class ShowDetail extends StatelessWidget {
           ),
           const SizedBox(height: 20),
 
-          // User Description Section
           const Text(
-            '사진 잘 찍었다고 칭찬받은 나의 수달 ~!~!',
-            style: TextStyle(fontSize: 16),
+            ' yeah!!',
+            style: TextStyle(fontSize: 20),
           ),
         ],
       ),
